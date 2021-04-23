@@ -50,8 +50,11 @@ const Projects = () => {
 					<a target="_blank" href="https://github.com/meganzinka/ad-magic.git">
 						<img src={gitHub} id="github-icon" />
 					</a>
+					<a target="_blank" href="https://github.com/meganzinka">
+						<img src={gitHub} id="github-icon" />
+					</a>
 				</div>
-				More Projects Coming soon! 
+				More Projects Coming soon! Click 
 
 				<div id="contact-info-projects">
 					<img className="three-circles" src={threeCircles} />

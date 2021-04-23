@@ -30,6 +30,11 @@ const About = () => {
 					and efficient systems. I am excited to continue to learn and grow in the field!
 				</div>
 
+				https://github.com/meganzinka
+				<a target="_blank" href="https://github.com/meganzinka">
+						<img src={gitHub} id="github-icon" />
+					</a>
+
 				<div id="contact-info">
 					<img className="three-circles" src={threeCircles} />
 
