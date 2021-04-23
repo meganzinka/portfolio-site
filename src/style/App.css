@@ -1,0 +1,239 @@
+/*-------App-------*/ 
+#app-wrapper{
+  width: 100vw;
+  height:100vh;
+  margin: 0; 
+}
+
+#app-container { 
+  display: grid; 
+  grid-template-columns: 0.8fr 0.9fr 4fr 0.8fr;
+  grid-template-rows: 10vh 100%; 
+}
+
+#sidebar-container {
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 1500; 
+}
+
+#main-container { 
+  grid-column: 3;
+  grid-row: 2; 
+  background-color: #F9F9FB;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 20px 30px 60px 0.5px rgb(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E4E5EC;
+  color: #27647C;
+}
+
+/* ----- Header Logo ----- */ 
+#logo-container { 
+  display: flex; 
+  width: 100%;
+  justify-content: flex-end;
+  align-content: center;
+  height: 150px; 
+}
+
+.logo {
+  height: 15vh;
+  justify-self: flex-end;
+  align-self: center;
+  padding: 4vh 4vw; 
+}
+
+/*--------About Page--------*/
+.main {
+  text-align: center;
+  margin: 0; 
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
+.main h3 { 
+  font-weight: 500;
+}
+
+/*paragraph description*/ 
+#about-me{
+text-align: justify; 
+font-size: 14px;
+padding-top: 5vh;
+font-weight: 300;
+}
+
+.title h3 {
+  padding-bottom: 3vh;
+}
+
+/*---------Projects ----------*/
+
+.main-projects {
+  text-align: center;
+  margin-left: 12vw;
+  margin-right: 12vw; 
+}
+
+#projects-container {
+  text-align: center; 
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+#projects-container h3 { 
+  font-weight: 500;
+}
+#project-description {
+  width: 560px; 
+  text-align: justify;
+  margin:0px; 
+  justify-self: center;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+#github-icon {
+  width: 90px;
+  height: 60px;
+  padding-top: 10px;
+  opacity: 90%;
+}
+
+/* ----- Footer Contact Info ----- */ 
+#contact-info { 
+  padding-top: 8vh;
+  padding-bottom: 8vh; 
+  justify-self:  center;
+  display: grid; 
+  grid-template-columns: 46% 8% 46%; 
+}
+
+#contact-info-projects {
+  padding-top: 8vh;
+  padding-bottom: 8vh; 
+  justify-self:  center;
+  display: grid; 
+  grid-template-columns: 46% 8% 46%; 
+  margin-left: 12vw;
+  margin-right: 12vw;
+  text-align: center;
+}
+
+.three-circles {
+  height: 5vh;
+  align-self: center;
+  grid-column: 2;
+  opacity: 70%;
+  justify-self: center;
+  padding-top: 7vh;
+  padding-bottom: 3vh;
+
+}
+.footer-icon {
+  padding:1px;
+  height:15px; 
+  justify-self:center;
+  align-self: center; 
+}
+
+#left-side a {
+  height:25%;
+}
+#right-side a {
+  height:25%;
+}
+#left-side { 
+  grid-column: 1; 
+  font-size: small;
+  height: 20px; 
+  grid-row:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+}
+
+#right-side { 
+  grid-column: 3;
+  grid-row:1;
+  font-size: small;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+}
+
+/*-------Sidebar-----------*/ 
+/* #sidebar {
+  display: grid; 
+  grid-template-rows: 150px 150px 150px 150px;
+  border-top-left-radius: 10px; 
+  border-collapse: separate; 
+  z-index: 2000;
+}
+
+#photo-tile { 
+  border-top-left-radius: 10px;
+}
+
+#bottom-tile { 
+  border-bottom-left-radius: 10px;
+}
+
+.sidebar-item-container {
+  width:150px;
+  float: right;
+  color: white; 
+  justify-self: flex-end;
+  height:100%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-image: url("./../images/Small_Yellow.png");
+  background-size: 100% 100%;
+  opacity: 90%;
+  font-weight: 200;
+  font-size: 0.95em; 
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  z-index: 2001;
+}
+
+.sidebar-item-container:hover { 
+  background-image: url("./../images/Small_Yellow.png");
+  opacity: 70%; 
+  font-size: 1em; 
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-icon {
+  width: 27px;
+  height: 33.5px;
+  padding-top: 10px;
+  opacity: 90%;
+  z-index: 2002;
+}
+
+#headshot {
+overflow:hidden;
+height: 100%; 
+width: 150px; 
+border-top-left-radius: 10px;
+z-index: 2002;
+
+} */
