@@ -105,8 +105,8 @@ font-weight: 300;
 #github-icon {
   width: 90px;
   height: 60px;
-  padding-top: 10px;
-  opacity: 0.9;
+  opacity: 0.85;
+  padding-top: 8vh; 
 }
 
 /* ----- Footer Contact Info ----- */ 

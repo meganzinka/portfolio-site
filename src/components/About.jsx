@@ -3,6 +3,7 @@ import threeCircles from '../images/yellowcircles.png';
 import logo from '../images/logo.png';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
+import gitHub from "../images/github.png"
 
 
 const About = () => {
@@ -30,7 +31,6 @@ const About = () => {
 					and efficient systems. I am excited to continue to learn and grow in the field!
 				</div>
 
-				https://github.com/meganzinka
 				<a target="_blank" href="https://github.com/meganzinka">
 						<img src={gitHub} id="github-icon" />
 					</a>
