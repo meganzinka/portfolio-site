@@ -5,6 +5,7 @@ import logo from "../images/logo.png";
 import linkedin from "../images/linkedin.png";
 import email from "../images/email.png";
 import gitHub from "../images/github.png";
+import "./../style/Projects.css"
 
 const Projects = () => {
   const [popup, setPopup] = useState(false);
@@ -14,6 +15,11 @@ const Projects = () => {
     console.log("inside showDescription, popup=", popup);
   }
   return (
+
+
+
+
+    
     <div>
       <div id="logo-container">
         <img className="logo" src={logo} />
@@ -22,6 +28,7 @@ const Projects = () => {
       <div className="main-projects">
         <div id="projects-container">
           <h3>PROJECTS</h3>
+          
           <a href="https://ad-magic.herokuapp.com" target="blank">
             AdMagic/BCA Capstone Project: Interactive Sales Dashboard
           </a>

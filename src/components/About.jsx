@@ -24,7 +24,7 @@ const About = () => {
 					my background in mathematics and statistics not only to be incredibly useful in understanding the
 					type of problem solving that web development demands, I revelled in the opportunity to think
 					critically, logically, and mathematically in new ways. As a teacher, I constantly thought about how
-					to make math content accessbile - minimizing clicks and steps to getting to the meat of the lesson -
+					to make math content accessbile - minimizing clicks and steps to getting to the core of the lesson -
 					and I have found the design instincts I developed in my teaching career to be tremendously useful as
 					I think about user experience and interface in web development. The more I learn about web
 					development, the more I find new interests and passions, such as sleek design, building intuitive
