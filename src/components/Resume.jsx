@@ -5,7 +5,7 @@ import {useState} from "react"
 const Resume = () => {
 
 	return (
-		<div>
+		<div id ="resume-container">
 			<embed src={resume} type="application/pdf" width="100%" height="800px"/>
 		</div>
 	);

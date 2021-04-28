@@ -5,7 +5,6 @@ import logo from "../images/logo.png";
 import linkedin from "../images/linkedin.png";
 import email from "../images/email.png";
 import gitHub from "../images/github.png";
-import "./../style/Projects.css"
 
 const Projects = () => {
   const [popup, setPopup] = useState(false);
@@ -15,11 +14,6 @@ const Projects = () => {
     console.log("inside showDescription, popup=", popup);
   }
   return (
-
-
-
-
-    
     <div>
       <div id="logo-container">
         <img className="logo" src={logo} />
@@ -35,8 +29,8 @@ const Projects = () => {
           <br />
           <br />
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="100%"
             src="https://www.youtube.com/embed/R5kDFPjVVMk"
             title="YouTube video player"
             frameborder="0"

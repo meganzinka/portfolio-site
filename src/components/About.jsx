@@ -3,21 +3,18 @@ import threeCircles from '../images/yellowcircles.png';
 import logo from '../images/logo.png';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
-import gitHub from "../images/github.png"
-
+import gitHub from '../images/github.png';
 
 const About = () => {
 	return (
 		<div>
-
 			<div id="logo-container">
 				<img className="logo" src={logo} />
 			</div>
-			
+
 			<div className="main">
-				<br />
-				<h3>ABOUT ME</h3>
 				<div id="about-me">
+					<h3>ABOUT ME</h3>
 					After six years as an Advanced Algebra and AP Statistics teacher in urban education, I am excited to
 					transition into web development! After self-directed learning for months, I recently completed an
 					intensive web development bootcamp program where I could fully immerse myself in the field. I found
@@ -32,8 +29,8 @@ const About = () => {
 				</div>
 
 				<a target="_blank" href="https://github.com/meganzinka">
-						<img src={gitHub} id="github-icon" />
-					</a>
+					<img src={gitHub} id="github-icon" />
+				</a>
 
 				<div id="contact-info">
 					<img className="three-circles" src={threeCircles} />
@@ -46,7 +43,7 @@ const About = () => {
 					</div>
 
 					<div id="right-side">
-					<a href="https://linkedin.com/in/meganzinka" target="blank" >
+						<a href="https://linkedin.com/in/meganzinka" target="blank">
 							<img className="footer-icon" src={linkedin} />
 						</a>
 						<div>linkedin.com/in/meganzinka</div>
