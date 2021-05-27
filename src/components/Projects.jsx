@@ -66,7 +66,7 @@ const Projects = () => {
           </a>
         </div>
 
-        <div id="contact-info-projects">
+        <div id="contact-info">
           <img className="three-circles" src={threeCircles} />
 
           <div id="left-side">
