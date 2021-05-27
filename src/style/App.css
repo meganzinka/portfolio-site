@@ -187,3 +187,16 @@ resume-container {
   opacity: 0.85;
   margin-top: 8vh; 
 }
+
+#projects-bar { 
+  display: flex; 
+  justify-content: space-between;
+}
+
+#previous { 
+  border: red 2px solid; 
+}
+
+#next { 
+  border: red 2px solid; 
+}
