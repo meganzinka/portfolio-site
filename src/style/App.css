@@ -96,7 +96,7 @@ width: 100%;
 }
 
 .three-circles {
-  height: 10vh;
+  height: 7vh;
   align-self: center;
   grid-column: 2;
   opacity: 0.70;
@@ -134,7 +134,7 @@ width: 100%;
 }
 #left-side { 
   grid-column: 1; 
-  font-size: small;
+  font-size: 2vh;
   height: 20px; 
   grid-row:1;
   display: flex;
@@ -146,7 +146,7 @@ width: 100%;
 #right-side { 
   grid-column: 3;
   grid-row:1;
-  font-size: small;
+  font-size: 2vh;
   height: 20px;
   display: flex;
   flex-direction: column;

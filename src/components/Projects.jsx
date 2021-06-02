@@ -12,6 +12,7 @@ import YelpGif from '../images/Yelp.gif';
 
 const Projects = () => {
 	return (
+		<div>
 		<div id="projects-container">
 			<div id="ad-magic" className="project">
 				<a href = "https://ad-magic.herokuapp.com/" target = "_blank">
@@ -82,6 +83,25 @@ const Projects = () => {
 					</a>
 				</div>
 			</div>
+		</div>
+
+		<div id="contact-info">
+					<img className="three-circles" src={threeCircles} />
+
+					<div id="left-side">
+						<a href="mailto:meganzinka@gmail.com" target="blank">
+							<img className="footer-icon" src={email} />
+						</a>
+						<div>meganzinka@gmail.com</div>
+					</div>
+
+					<div id="right-side">
+						<a href="https://linkedin.com/in/meganzinka" target="blank">
+							<img className="footer-icon" src={linkedin} />
+						</a>
+						<div>linkedin.com/in/meganzinka</div>
+					</div>
+				</div>
 		</div>
 	);
 };
