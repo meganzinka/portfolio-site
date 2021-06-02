@@ -7,7 +7,7 @@
 
 #app-container { 
   display: grid; 
-  grid-template-columns: 0.8fr 0.9fr 4fr 0.8fr;
+  grid-template-columns: 0.6fr 0.9fr 4fr 0.6fr;
   grid-template-rows: 10vh 100%; 
 }
 
@@ -116,7 +116,7 @@ width: 100%;
   width: 90px;
   height: 60px;
   opacity: 0.85;
-  margin-top: 8vh;
+  margin-top: 1vh;
   justify-self: center;
 }
 
@@ -161,54 +161,65 @@ resume-container {
 
 }
 /*---------Projects ----------*/
-/* 
-.main-projects {
-  text-align: center;
-  margin-left: 12vw;
-  margin-right: 12vw; 
-}
-
-#projects-container {
-  text-align: center; 
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-}
-
-#projects-container h3 { 
-  font-weight: 500;
-}
-#project-description {
-  text-align: justify;
-  margin:0px; 
-  justify-self: center;
-  align-self: center;
-  display: block;
-  font-weight: 300;
-}
-
-#github-icon {
-  width: 90px;
-  height: 60px;
-  opacity: 0.85;
-  margin-top: 8vh; 
-}
-
-#projects-bar { 
-  display: flex; 
-  justify-content: space-between;
-}
-
-#previous { 
-  border: red 2px solid; 
-}
-
-#next { 
-  border: red 2px solid; 
-} */
 
 #projects-container {
   display: grid; 
-  grid-template-columns: 50% 50%; 
-  grid-template-rows: 50% 50%; 
+  grid-template-columns: 1vw 1fr 1fr 1vw; 
+  grid-template-rows: 1vw auto auto;
+  grid-gap: 4vh; 
+}
+
+#ad-magic { 
+grid-column: 2;
+grid-row: 2; 
+
+}
+
+#til { 
+  grid-column: 2;
+  grid-row: 3; 
+}
+
+#geo-vt { 
+  grid-column: 3;
+grid-row: 3; 
+}
+
+#yelp {
+  grid-column: 3;
+  grid-row: 2; 
+}
+
+#github-icon {
+  height: 5vh;
+  width: auto; 
+  opacity: 0.85;
+  margin-top: 1vh;
+}
+
+.project { 
+  text-align: justify; 
+  /* padding: 2vw;  */
+  font-size: 0.9vw; 
+  overflow: scroll;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d9dae398;
+  box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.3);
+}
+
+
+.project-description { 
+  padding: 1.1vw; 
+}
+.gif { 
+width: 100%; 
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.gif:hover{
+  filter: brightness(105%)
 }
