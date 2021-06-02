@@ -29,7 +29,7 @@ const About = () => {
 				</div>
 
 				<a target="_blank" href="https://github.com/meganzinka">
-					<img src={gitHub} id="github-icon" />
+					<img src={gitHub} id="about-github-icon" />
 				</a>
 
 				<div id="contact-info">
