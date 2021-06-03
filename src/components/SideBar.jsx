@@ -15,6 +15,7 @@ const SideBar = () => {
 		history.push(event.target.value);
 	}
 
+	if (window.location.pathname !== '/') {
 	return (
 		<div id="sidebar">
 			<Link to ="/">
@@ -44,7 +45,7 @@ const SideBar = () => {
 				</div>
 			</Link>
 		</div>
-	);
+	)} else return null; 
 };
 
 export default SideBar;
