@@ -16,11 +16,19 @@ const Home = (props) => {
 		<div id="home-page">
 			<div id="comp-wrapper" onClick={enterSite}>
 			<img src={computer} onClick={enterSite} />
-			<div class="wrapper" onClick={enterSite}>
+			<div className="wrapper" onClick={enterSite}>
 				<div id="typing-demo" onClick={enterSite}>Megan Zinka</div>
 			</div>
-			<div class="wrapper" onClick={enterSite}>
+			<div className="wrapper" onClick={enterSite}>
 				<div id="dev-title" onClick={enterSite}>Full Stack Developer</div>
+			</div>
+			<div className = "wrapper">
+				<div className = "tech">JavaScript</div>
+				<div className = "tech">React</div>
+				<div className = "tech">CSS</div>
+				<div className = "tech">Mongo DB</div>
+				<div className = "tech"></div>
+
 			</div>
 			</div>
 		</div>
