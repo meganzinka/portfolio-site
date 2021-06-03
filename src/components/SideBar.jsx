@@ -6,20 +6,22 @@ import bulbIcon from "./../images/bulb.png"
 import projectsIcon from "./../images/projects.png"
 import resumeIcon from "./../images/resumeIcon.png"
 
-const SideBar = () => {
+const SideBar = (props) => {
 	const history = useHistory();
 
+	function hideSideBar (event) { 
+		props.setShowSideBar(false)
+	}
+
 	function changePage(event) {
-		console.log('in change page function');
-		console.log(event.target);
 		history.push(event.target.value);
 	}
 
-	if (window.location.pathname !== '/') {
+	if (props.showSideBar) {
 	return (
 		<div id="sidebar">
 			<Link to ="/">
-			<div id ="photo-tile" className="sidebar-item-container">
+			<div id ="photo-tile" className="sidebar-item-container" onClick = {hideSideBar}>
 				<img id="headshot" src={headshot} />
 			</div>
 			</Link>

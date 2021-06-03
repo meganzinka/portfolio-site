@@ -8,13 +8,93 @@
     align-items: center;
     justify-content: center;
     z-index:1000; 
+    overflow: hidden;
+  }
+  #comp-wrapper {
+    width: 45vw;
+    height:55vh;
+    position: relative;
   }
   
   #home-page img {
-    width: 700px;
-    height:574px;
+    width: 45vw;
+    height:auto;
+    z-index:2000; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
   }
   
   #home-page img:hover {
     cursor: pointer;
+  }
+
+  .wrapper:hover, #typing-demo:hover, #comp-wrapper:hover, #dev-title:hover {
+    cursor: pointer; 
+  }  
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2100; 
+  }
+  
+  #typing-demo {
+    width: 11ch;
+    animation: typing 2s steps(11), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    white-space: nowrap; 
+    border-right: .15em solid transparent;
+    font-family: monospace;
+    font-size: 4vw;
+    z-index: 2200; 
+    position: absolute; 
+    left: 10vw; 
+    top: 13vh; 
+    text-align:center; 
+  }
+
+  #dev-title {
+    width: 20ch;
+    animation: typing 2s steps(20), blink .4s step-end infinite alternate;
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap; 
+    /* border-right: .15em solid transparent; */
+    font-family: monospace;
+    font-size: 2.3vw;
+    z-index: 2200; 
+    position: absolute; 
+    left: 9.3vw; 
+    top: 20vh; 
+    text-align:center; 
+    opacity: 0; 
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    } 
+
+  }
+      
+  @keyframes blink {
+    from, to {
+      border-color: transparent
+    }
+  }
+
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+      opacity: 1; 
+    }
   }
