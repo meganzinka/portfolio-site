@@ -23,11 +23,7 @@ const Home = (props) => {
 				<div id="dev-title" onClick={enterSite}>Full Stack Developer</div>
 			</div>
 			<div className = "wrapper">
-				<div className = "tech">JavaScript</div>
-				<div className = "tech">React</div>
-				<div className = "tech">CSS</div>
-				<div className = "tech">Mongo DB</div>
-				<div className = "tech"></div>
+			<div id="tech">Javascript | React | CSS | Mongo DB | Web API </div>
 
 			</div>
 			</div>
