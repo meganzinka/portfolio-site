@@ -7,6 +7,7 @@ import projectsIcon from "./../images/projects.png"
 import resumeIcon from "./../images/resumeIcon.png"
 
 const SideBar = (props) => {
+	console.log(window.location)
 	const history = useHistory();
 
 	function hideSideBar (event) { 
@@ -17,7 +18,7 @@ const SideBar = (props) => {
 		history.push(event.target.value);
 	}
 
-	if (props.showSideBar || window.location !== "/") {
+	if (props.showSideBar || window.location.pathname !== "/") {
 	return (
 		<div id="sidebar">
 			<Link to ="/">
