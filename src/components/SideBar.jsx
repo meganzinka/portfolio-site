@@ -17,7 +17,7 @@ const SideBar = (props) => {
 		history.push(event.target.value);
 	}
 
-	if (props.showSideBar) {
+	if (props.showSideBar || window.location !== "/") {
 	return (
 		<div id="sidebar">
 			<Link to ="/">
