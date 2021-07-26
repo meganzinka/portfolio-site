@@ -24,7 +24,20 @@ const Home = (props) => {
 			</div>
 			<div className = "wrapper">
 			<div id="tech">Javascript | React | CSS | Mongo DB | Web API </div>
+			</div>
+			</div>
 
+			<div id="comp-wrapper-mobile">
+			<img src={computer}  />
+			<div className="wrapper" >
+				<div id="typing-demo">Megan Zinka</div>
+			</div>
+			<div className="wrapper" >
+				<div id="dev-title">Full Stack Developer</div>
+			</div>
+			<div className = "wrapper">
+			<div id="tech">Javascript | React | CSS | Mongo DB | Web API </div>
+			<div id="mobile-message">Mobile Site Under Construction!</div>
 			</div>
 			</div>
 		</div>

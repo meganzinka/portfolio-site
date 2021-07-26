@@ -64,7 +64,7 @@
 
   #dev-title {
     width: 20ch;
-    animation: typing 4s steps(20), blink .4s step-end infinite alternate;
+    animation: typing 3s steps(20), blink .4s step-end infinite alternate;
     -webkit-animation-delay: 3s; 
     animation-delay: 3s; 
     white-space: nowrap;
@@ -85,8 +85,28 @@
   #tech{
     width: 40ch;
     animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 7s; 
-    animation-delay: 7s; 
+    -webkit-animation-delay: 6s; 
+    animation-delay: 6s; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap; 
+    /* border-right: .15em solid transparent; */
+    /* font-family: monospace; */
+    font-size: 1.3vw;
+    z-index: 2200; 
+    position: absolute; 
+    /* left: 3vw;  */
+    top: 12vw; 
+    text-align:center; 
+    opacity: 0; 
+  }
+  
+  #mobile-message {
+    width: 40ch;
+    animation: typing 2s steps(45), blink .4s step-end infinite alternate;
+    -webkit-animation-delay: 9s; 
+    animation-delay: 9s; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -101,7 +121,6 @@
     text-align:center; 
     opacity: 0; 
   }
-  
   @keyframes typing {
     from {
       width: 0
@@ -122,5 +141,18 @@
     }
   }
 
+  #comp-wrapper-mobile {
+    display: none; 
+  }
 
-    
+  @media only screen and (max-width: 600px) {
+#comp-wrapper {
+  display: none; 
+}
+#comp-wrapper-mobile {
+  display: inline-block; 
+  width: 45vw;
+  height:55vh;
+  position: relative;
+}
+  }
