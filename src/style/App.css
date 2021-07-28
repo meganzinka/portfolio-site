@@ -80,13 +80,12 @@ body {
   text-align: justify;
   padding: 5vh;
   font-weight: 300;
-  /* width: 100%; */
   font-size: 0.9vw;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c2c3ce98;
+  background-color: #d7d8e998;
   box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.10);
 }
 
@@ -230,7 +229,8 @@ resume-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c2c3ce98;
+  background-color: #d7d8e998;
+  ;
   box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.15);
 }
 
