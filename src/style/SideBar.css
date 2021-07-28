@@ -60,4 +60,31 @@
     z-index: 2002;
   }
 
-  
+  /* @media only screen and (max-width: 600px) {
+    #sidebar {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      border-top-left-radius: 10px;
+      border-collapse: separate;
+      z-index: 2000;
+    }
+    .sidebar-item-container {
+      width: 150px;
+      float: right;
+      color: white;
+      justify-self: flex-end;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-image: url("./../images/Small_Yellow.png");
+      background-size: 100% 100%;
+      opacity: 0.9;
+      font-weight: 200;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      z-index: 2001;
+    }
+  } */
