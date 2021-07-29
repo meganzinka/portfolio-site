@@ -152,6 +152,25 @@
   width: 45vw;
   height:55vh;
   position: relative;
+  
+}
+
+#tech{
+  width: 40ch;
+  animation: typing 2s steps(45), blink .4s step-end infinite alternate;
+  -webkit-animation-delay: 6s; 
+  animation-delay: 6s; 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap; 
+  border-right: .15em solid transparent;
+  font-size: 1.3vw;
+  z-index: 2200; 
+  position: absolute; 
+  top: 12vw; 
+  text-align:center; 
+  opacity: 0; 
 }
 
 
