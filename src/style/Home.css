@@ -100,25 +100,6 @@
     opacity: 0; 
   }
   
-  #mobile-message {
-    width: 40ch;
-    animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 9s; 
-    animation-delay: 9s; 
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    white-space: nowrap; 
-    /* border-right: .15em solid transparent; */
-    /* font-family: monospace; */
-    font-size: 1.3vw;
-    z-index: 2200; 
-    position: absolute; 
-    /* left: 3vw;  */
-    top: 18vw; 
-    text-align:center; 
-    opacity: 0; 
-  }
   @keyframes typing {
     from {
       width: 0
@@ -149,10 +130,45 @@
 }
 #comp-wrapper-mobile {
   display: inline-block; 
-  width: 45vw;
+  width: 80vw;
   height:55vh;
   position: relative;
-  
+}
+
+#typing-demo {
+  width: 70%;
+  animation: typing 2s steps(11), blink .4s step-end infinite alternate;
+  -webkit-animation-delay: 1s; 
+  animation-delay: 1s; 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap; 
+  border-right: .15em solid transparent;
+  font-size: 7vw;
+  z-index: 2200; 
+  position: absolute; 
+  top: 8vw; 
+  text-align:center; 
+  opacity: 0; 
+}
+
+#dev-title {
+  width: 20ch;
+  animation: typing 3s steps(20), blink .4s step-end infinite alternate;
+  -webkit-animation-delay: 3s; 
+  animation-delay: 3s; 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap; 
+  border-right: .15em solid transparent;
+  font-size: 4vw;
+  z-index: 2200; 
+  position: absolute; 
+  top: 15vw; 
+  text-align:center; 
+  opacity: 0; 
 }
 
 #tech{
@@ -165,12 +181,51 @@
   border-right: 3px solid;
   white-space: nowrap; 
   border-right: .15em solid transparent;
-  font-size: 1.3vw;
+  font-size: 2vw;
   z-index: 2200; 
   position: absolute; 
-  top: 12vw; 
+  top: 20vw; 
   text-align:center; 
   opacity: 0; 
+}
+
+#mobile-message {
+  width: 40ch;
+  animation: typing 2s steps(45), blink .4s step-end infinite alternate;
+  -webkit-animation-delay: 9s; 
+  animation-delay: 9s; 
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap; 
+  font-size: 4vw;
+  z-index: 2200; 
+  position: absolute; 
+  top: 30vw; 
+  text-align:center; 
+  opacity: 0; 
+}
+
+#home-page { 
+  /* text-align: center; */
+  background: url("./../images/yellowbg.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  align-items: center;
+  padding-left:10vw;
+  padding-right: 10vw;
+  z-index:1000; 
+  /* overflow: hidden; */
+}
+
+#home-page img {
+  width: 80vw;
+  height:auto;
+  z-index:2000; 
+  position: absolute; 
+  /* left: 0; 
+  top: 0;  */
 }
 
 
