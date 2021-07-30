@@ -1,4 +1,8 @@
 /*---------Home Page-----------*/ 
+
+body {
+  height: 95vh; 
+}
 #home-page { 
     text-align: center;
     background: url("./../images/yellowbg.png");
@@ -33,7 +37,7 @@
     cursor: pointer; 
   }  
   .wrapper {
-    height: 100vh;
+    height: 95vh;
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -100,31 +104,29 @@
     opacity: 0; 
   }
   
-  @keyframes typing {
-    from {
-      width: 0
-    } 
-
-  }
-      
-  @keyframes blink {
-    from, to {
-      border-color: transparent
-    }
-  }
-
-  @keyframes blink {
-    from, to {
-      border-color: transparent;
-      opacity: 1; 
-    }
-  }
 
   #comp-wrapper-mobile {
     display: none; 
   }
 
   @media only screen and (max-width: 600px) {
+    #home-page { 
+      background: url("./../images/yellowbg.png");
+      width: 100vw;
+      height: 100vh;
+      display: flex; 
+      align-items: center;
+      z-index:1000; 
+      overflow: hidden;
+    }
+    
+    #home-page img {
+      width: 80vw;
+      height:auto;
+      z-index:2000; 
+      position: absolute; 
+    }
+
 #comp-wrapper {
   display: none; 
 }
@@ -206,27 +208,26 @@
   opacity: 0; 
 }
 
-#home-page { 
-  /* text-align: center; */
-  background: url("./../images/yellowbg.png");
-  width: 100vw;
-  height: 100vh;
-  display: flex; 
-  align-items: center;
-  padding-left:10vw;
-  padding-right: 10vw;
-  z-index:1000; 
-  /* overflow: hidden; */
-}
-
-#home-page img {
-  width: 80vw;
-  height:auto;
-  z-index:2000; 
-  position: absolute; 
-  /* left: 0; 
-  top: 0;  */
-}
+  }
 
 
+
+  @keyframes typing {
+    from {
+      width: 0
+    } 
+
+  }
+      
+  @keyframes blink {
+    from, to {
+      border-color: transparent
+    }
+  }
+
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+      opacity: 1; 
+    }
   }
