@@ -4,7 +4,6 @@ body {
   height: 95vh; 
 }
 #home-page { 
-    text-align: center;
     background: url("./../images/yellowbg.png");
     width: 100vw;
     height: 100vh;
@@ -14,6 +13,7 @@ body {
     z-index:1000; 
     overflow: hidden;
   }
+
   #comp-wrapper {
     width: 45vw;
     height:55vh;
@@ -68,7 +68,7 @@ body {
 
   #dev-title {
     width: 20ch;
-    animation: typing 3s steps(20), blink .4s step-end infinite alternate;
+    animation: typing 2s steps(20), blink .4s step-end infinite alternate;
     -webkit-animation-delay: 3s; 
     animation-delay: 3s; 
     white-space: nowrap;
@@ -89,8 +89,8 @@ body {
   #tech{
     width: 40ch;
     animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 6s; 
-    animation-delay: 6s; 
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -104,38 +104,29 @@ body {
     opacity: 0; 
   }
   
-
   #comp-wrapper-mobile {
     display: none; 
   }
 
   @media only screen and (max-width: 600px) {
-    #home-page { 
-      background: url("./../images/yellowbg.png");
-      width: 100vw;
-      height: 100vh;
-      display: flex; 
-      align-items: center;
-      z-index:1000; 
-      overflow: hidden;
+    
+    #comp-wrapper {
+      display: none; 
     }
     
+    #comp-wrapper-mobile {
+      display: inline-block; 
+      width: 80vw;
+      height:55vh;
+      position: relative;
+    }
+
     #home-page img {
       width: 80vw;
       height:auto;
       z-index:2000; 
       position: absolute; 
     }
-
-#comp-wrapper {
-  display: none; 
-}
-#comp-wrapper-mobile {
-  display: inline-block; 
-  width: 80vw;
-  height:55vh;
-  position: relative;
-}
 
 #typing-demo {
   width: 70%;

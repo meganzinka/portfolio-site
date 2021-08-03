@@ -30,6 +30,8 @@ const SideBar = (props) => {
 			<Link id="link" to="/about">
 				<div className="sidebar-item-container">
 					About Me
+					<br></br>
+
 					<img className = "sidebar-icon" src ={bulbIcon} />
 				</div>
 			</Link>
@@ -37,6 +39,8 @@ const SideBar = (props) => {
 			<Link id="link" to="/resume">
 				<div className="sidebar-item-container">
 					Resume
+					<br></br>
+
 					<img className = "sidebar-icon" src ={resumeIcon} />
 				</div>
 			</Link>
@@ -44,6 +48,8 @@ const SideBar = (props) => {
 			<Link id="link" to="/projects">
 				<div id = "bottom-tile" className="sidebar-item-container">
 					Projects
+					<br></br>
+
 					<img className = "sidebar-icon" src ={projectsIcon} />
 				</div>
 			</Link>
