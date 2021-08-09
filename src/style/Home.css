@@ -36,9 +36,9 @@ body {
   .wrapper:hover, #typing-demo:hover, #comp-wrapper:hover, #dev-title:hover {
     cursor: pointer; 
   }  
+  
   .wrapper {
     height: 95vh;
-    /*This part is important for centering*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,6 +110,9 @@ body {
 
   @media only screen and (max-width: 600px) {
     
+    /* .wrapper {
+      height: 50vh;
+    } */
     #comp-wrapper {
       display: none; 
     }
@@ -125,9 +128,12 @@ body {
       width: 80vw;
       height:auto;
       z-index:2000; 
-      position: absolute; 
+      position: absolute;       
     }
 
+    /* #home-page {
+      grid-row: 1/2;
+    } */
 #typing-demo {
   width: 70%;
   animation: typing 2s steps(11), blink .4s step-end infinite alternate;
@@ -177,31 +183,11 @@ body {
   font-size: 2vw;
   z-index: 2200; 
   position: absolute; 
-  top: 20vw; 
-  text-align:center; 
-  opacity: 0; 
-}
-
-#mobile-message {
-  width: 40ch;
-  animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-  -webkit-animation-delay: 9s; 
-  animation-delay: 9s; 
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  white-space: nowrap; 
-  font-size: 4vw;
-  z-index: 2200; 
-  position: absolute; 
   top: 30vw; 
   text-align:center; 
   opacity: 0; 
 }
-
   }
-
-
 
   @keyframes typing {
     from {

@@ -64,7 +64,7 @@
     #sidebar {
       display: grid;
       grid-template-columns: 25vw 25vw 25vw 25vw;
-      grid-template-rows: 150px;
+      grid-template-rows: 25vw;
       border-top-left-radius: 10px;
       border-collapse: separate;
       z-index: 2000;
@@ -76,6 +76,7 @@
     }
     .sidebar-item-container {
       width: 25vw;
+      height: 25vw; 
       color: white;
       justify-self: flex-end;
       height: 100%;
@@ -85,9 +86,10 @@
       background-size: 100% 100%;
       opacity: 0.9;
       font-weight: 200;
-      font-size: 0.95em;
+      font-size: 4vw;
       text-transform: uppercase;
       z-index: 2001;
+      text-align: center;
     }
     #bottom-tile {
       border-bottom-left-radius: 0;

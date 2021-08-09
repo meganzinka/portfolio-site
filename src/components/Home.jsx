@@ -37,7 +37,6 @@ const Home = (props) => {
 			</div>
 			<div className = "wrapper">
 			<div id="tech">Javascript | React | CSS | Mongo DB | Web API </div>
-			<div id="mobile-message">Mobile Site Under Construction!</div>
 			</div>
 			</div>
 		</div>
