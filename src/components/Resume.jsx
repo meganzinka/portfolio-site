@@ -1,26 +1,28 @@
-import React from 'react';
+import React from "react";
 // import resume from './../files/MeganZinkaResume.pdf';
-import {Document, Page} from 'react-pdf/dist/esm/entry.webpack'
-import {useState, useEffect} from "react"
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+import { useState, useEffect } from "react";
 import PDFViewer from "pdf-viewer-reactjs";
 
 const Resume = () => {
+  return (
+    <div>
+      <div id="resume-container">
+      <div id ="resume-container">
+			<embed src= "./MeganZinkaResume.pdf" type="application/pdf" width="100%" height="800px"/>
+		</div>
+      </div>
+      <div id="resume-container-mobile">
+        <PDFViewer
+          id="resume-pdf"
 
-
-
-	return (
-		<div>
-		<div id ="resume-container">
-		<PDFViewer document={{
-				url: "./MeganZinkaResume.pdf"
-			}} />		</div>
-				<div id ="resume-container-mobile">
-			<PDFViewer id="resume-pdf" document={{
-				url: "./MeganZinkaResume.pdf"
-			}} />
-			</div>
-			</div>
-	);
+          document={{
+            url: "./MeganZinkaResume.pdf",
+          }}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default Resume;

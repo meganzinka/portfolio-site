@@ -1,210 +1,213 @@
-/*---------Home Page-----------*/ 
+/*---------Home Page-----------*/
 
 body {
-  height: 95vh; 
+  height: 95vh;
 }
-#home-page { 
-    background: url("./../images/yellowbg.png");
-    width: 100vw;
-    height: 100vh;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    z-index:1000; 
-    overflow: hidden;
-  }
+#home-page {
+  background: url("./../images/yellowbg.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
 
-  #comp-wrapper {
-    width: 45vw;
-    height:55vh;
-    position: relative;
-  }
-  
-  #home-page img {
-    width: 45vw;
-    height:auto;
-    z-index:2000; 
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-  }
-  
-  #home-page img:hover {
-    cursor: pointer;
-  }
+#comp-wrapper {
+  width: 45vw;
+  height: 55vh;
+  position: relative;
+}
 
-  .wrapper:hover, #typing-demo:hover, #comp-wrapper:hover, #dev-title:hover {
-    cursor: pointer; 
-  }  
-  
-  .wrapper {
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 2100; 
-  }
-  
-  #typing-demo {
-    width: 70%;
-    animation: typing 2s steps(11), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 1s; 
-    animation-delay: 1s; 
-    white-space: nowrap;
-    overflow: hidden;
-    /* border-right: 3px solid; */
-    white-space: nowrap; 
-    border-right: .15em solid transparent;
-    /* font-family: monospace; */
-    font-size: 4vw;
-    z-index: 2200; 
-    position: absolute; 
-    /* left: 10vw;  */
-    top: 5vw; 
-    text-align:center; 
-    opacity: 0; 
-  }
+#home-page img {
+  width: 45vw;
+  height: auto;
+  z-index: 2000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
-  #dev-title {
-    width: 20ch;
-    animation: typing 2s steps(20), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 3s; 
-    animation-delay: 3s; 
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    white-space: nowrap; 
-    /* border-right: .15em solid transparent; */
-    /* font-family: monospace; */
-    font-size: 2.3vw;
-    z-index: 2200; 
-    position: absolute; 
-    /* left: 9.3vw;  */
-    top: 9.5vw; 
-    text-align:center; 
-    opacity: 0; 
-  }
+#home-page img:hover {
+  cursor: pointer;
+}
 
-  #tech{
-    width: 40ch;
-    animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-    -webkit-animation-delay: 5s; 
-    animation-delay: 5s; 
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    white-space: nowrap; 
-    border-right: .15em solid transparent;
-    font-size: 1.3vw;
-    z-index: 2200; 
-    position: absolute; 
-    top: 18vw; 
-    text-align:center; 
-    opacity: 0; 
-  }
-  
-  #comp-wrapper-mobile {
-    display: none; 
-  }
+.wrapper:hover,
+#typing-demo:hover,
+#comp-wrapper:hover,
+#dev-title:hover {
+  cursor: pointer;
+}
 
-  @media only screen and (max-width: 600px) {
-    
-    /* .wrapper {
-      height: 50vh;
-    } */
-    #comp-wrapper {
-      display: none; 
-    }
-    
-    #comp-wrapper-mobile {
-      display: inline-block; 
-      width: 80vw;
-      height:55vh;
-      position: relative;
-    }
+.wrapper {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2100;
+}
 
-    #home-page img {
-      width: 80vw;
-      height:auto;
-      z-index:2000; 
-      position: absolute;       
-    }
-
-    /* #home-page {
-      grid-row: 1/2;
-    } */
 #typing-demo {
   width: 70%;
-  animation: typing 2s steps(11), blink .4s step-end infinite alternate;
-  -webkit-animation-delay: 1s; 
-  animation-delay: 1s; 
+  animation: typing 2s steps(11), blink 0.4s step-end infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
-  white-space: nowrap; 
-  border-right: .15em solid transparent;
-  font-size: 7vw;
-  z-index: 2200; 
-  position: absolute; 
-  top: 8vw; 
-  text-align:center; 
-  opacity: 0; 
+  /* border-right: 3px solid; */
+  white-space: nowrap;
+  border-right: 0.15em solid transparent;
+  /* font-family: monospace; */
+  font-size: 4vw;
+  z-index: 2200;
+  position: absolute;
+  /* left: 10vw;  */
+  top: 5vw;
+  text-align: center;
+  opacity: 0;
 }
 
 #dev-title {
   width: 20ch;
-  animation: typing 3s steps(20), blink .4s step-end infinite alternate;
-  -webkit-animation-delay: 3s; 
-  animation-delay: 3s; 
+  animation: typing 2s steps(20), blink 0.4s step-end infinite alternate;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  white-space: nowrap; 
-  border-right: .15em solid transparent;
-  font-size: 4vw;
-  z-index: 2200; 
-  position: absolute; 
-  top: 15vw; 
-  text-align:center; 
-  opacity: 0; 
+  white-space: nowrap;
+  /* border-right: .15em solid transparent; */
+  /* font-family: monospace; */
+  font-size: 2.3vw;
+  z-index: 2200;
+  position: absolute;
+  /* left: 9.3vw;  */
+  top: 9.5vw;
+  text-align: center;
+  opacity: 0;
 }
 
-#tech{
+#tech {
   width: 40ch;
-  animation: typing 2s steps(45), blink .4s step-end infinite alternate;
-  -webkit-animation-delay: 6s; 
-  animation-delay: 6s; 
+  animation: typing 2s steps(45), blink 0.4s step-end infinite alternate;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  white-space: nowrap; 
-  border-right: .15em solid transparent;
-  font-size: 2vw;
-  z-index: 2200; 
-  position: absolute; 
-  top: 30vw; 
-  text-align:center; 
-  opacity: 0; 
+  white-space: nowrap;
+  border-right: 0.15em solid transparent;
+  font-size: 1.3vw;
+  z-index: 2200;
+  position: absolute;
+  top: 18vw;
+  text-align: center;
+  opacity: 0;
 }
+
+#comp-wrapper-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .wrapper {
+      height: 50vh;
+    } */
+  #comp-wrapper {
+    display: none;
   }
 
-  @keyframes typing {
-    from {
-      width: 0
-    } 
-
-  }
-      
-  @keyframes blink {
-    from, to {
-      border-color: transparent
-    }
+  #comp-wrapper-mobile {
+    display: inline-block;
+    width: 80vw;
+    height: 55vh;
+    position: relative;
   }
 
-  @keyframes blink {
-    from, to {
-      border-color: transparent;
-      opacity: 1; 
-    }
+  #home-page img {
+    width: 80vw;
+    height: auto;
+    z-index: 2000;
+    position: absolute;
   }
+
+  /* #home-page {
+      grid-row: 1/2;
+    } */
+  #typing-demo {
+    width: 70%;
+    animation: typing 2s steps(11), blink 0.4s step-end infinite alternate;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    border-right: 0.15em solid transparent;
+    font-size: 7vw;
+    z-index: 2200;
+    position: absolute;
+    top: 8vw;
+    text-align: center;
+    opacity: 0;
+  }
+
+  #dev-title {
+    width: 20ch;
+    animation: typing 3s steps(20), blink 0.4s step-end infinite alternate;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    border-right: 0.15em solid transparent;
+    font-size: 4vw;
+    z-index: 2200;
+    position: absolute;
+    top: 15vw;
+    text-align: center;
+    opacity: 0;
+  }
+
+  #tech {
+    width: 40ch;
+    animation: typing 2s steps(45), blink 0.4s step-end infinite alternate;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    border-right: 0.15em solid transparent;
+    font-size: 2vw;
+    z-index: 2200;
+    position: absolute;
+    top: 30vw;
+    text-align: center;
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+    opacity: 1;
+  }
+}

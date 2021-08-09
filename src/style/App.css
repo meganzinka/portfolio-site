@@ -1,12 +1,12 @@
 /*-------App-------*/
-@import url('bulma/css/bulma.css');
-@import url('material-design-icons/iconfont/material-icons.css');
+@import url("bulma/css/bulma.css");
+@import url("material-design-icons/iconfont/material-icons.css");
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #e4e5ec;
   color: #27647c;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   overflow: scroll;
 }
@@ -38,7 +38,6 @@ body {
   border-bottom-left-radius: 10px;
   box-shadow: 20px 30px 60px 0.5px rgb(0, 0, 0, 0.1);
 }
-
 
 /* ----- Header Logo ----- */
 #logo-container {
@@ -82,7 +81,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #d7d8e998;
-  box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.10);
+  box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.1);
 }
 
 .title h3 {
@@ -116,8 +115,6 @@ body {
   grid-column: 2;
   opacity: 0.7;
   justify-self: center;
-  padding-top: 6vh;
-  padding-bottom: 3vh;
 }
 .footer-icon {
   padding: 1px;
@@ -182,7 +179,7 @@ body {
 }
 #resume-container-mobile {
   width: 100%;
-  /* display:none;  */
+  display: none;
 }
 /*---------Projects ----------*/
 
@@ -233,7 +230,7 @@ body {
 }
 
 .project:hover {
-width: 105%
+  width: 105%;
 }
 .project-description {
   padding: 1.1vw;
@@ -251,11 +248,17 @@ width: 105%
 @media only screen and (max-width: 600px) {
   body {
     overflow-y: scroll;
+    height: 100vh;
+    margin: 0; 
+    padding-bottom: 20px; 
+  }
+  html {
+    height: 100%; 
   }
   #app-container {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25vw 75vw;
+    grid-template-rows: 25vw 100%;
   }
 
   .main {
@@ -265,26 +268,26 @@ width: 105%
     margin-left: 5vw;
     margin-right: 5vw;
     display: inline-block;
-    width:90vw; 
+    width: 90vw;
   }
-  
+
   .main h3 {
     font-weight: 500;
     text-align: center;
   }
 
-#sidebar-container {
-  grid-row: 1;
-  grid-column: 1; 
-  z-index: 1500;
-}
+  #sidebar-container {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1500;
+  }
   #main-container {
     grid-column: 1;
     grid-row: 2;
     background-color: #f9f9fb;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 0px; 
+    border-top-right-radius: 0px;
     box-shadow: 20px 30px 60px 0.5px rgb(0, 0, 0, 0.2);
   }
 
@@ -308,25 +311,26 @@ width: 105%
     grid-template-rows: 1vw auto auto auto auto;
     grid-gap: 4vh;
   }
-  
+
   #ad-magic {
     grid-column: 2;
     grid-row: 2;
   }
-  
+
   #til {
     grid-column: 2;
     grid-row: 3;
   }
-  
+
   #geo-vt {
     grid-column: 2;
     grid-row: 4;
   }
-  
+
   #yelp {
     grid-column: 2;
     grid-row: 5;
+    margin-bottom: 5vh; 
   }
   #about-github-icon {
     height: 5vh;
@@ -347,12 +351,12 @@ width: 105%
     flex-direction: column;
     justify-content: space-between;
     background-color: #d7d8e998;
-    box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.10);
+    box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.1);
   }
   #logo-container {
     display: none;
   }
-  
+
   .logo {
     height: 20vh;
     justify-self: flex-end;
@@ -384,7 +388,7 @@ width: 105%
     justify-content: center;
     height: 100%;
   }
-  
+
   #right-side {
     grid-column: 3;
     grid-row: 1;
@@ -394,6 +398,10 @@ width: 105%
     flex-direction: column;
     justify-content: center;
     height: 100%;
+  }
+
+  .footer-icon {
+    margin-bottom: 5vh; 
   }
 
   .project {
@@ -416,7 +424,7 @@ width: 105%
   }
 
   .project:hover {
-  width: 105%
+    width: 105%;
   }
   .project-description {
     padding: 1.1vw;
@@ -426,12 +434,20 @@ width: 105%
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
-  
+
   .gif:hover {
     filter: brightness(105%);
   }
+  #resume-container-mobile {
+    display: flex;
+  }
 
-  #resume-pdf { 
-    max-width: 100vw;
+  #resume-container{
+    display: none; 
+  }
+  #resume-pdf {
+    width: 10vw !important;
+    margin: 0 auto; 
+    height: 1100px; 
   }
 }
