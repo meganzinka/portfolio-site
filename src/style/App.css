@@ -20,7 +20,7 @@ body {
 #app-container {
   display: grid;
   grid-template-columns: 0.6fr 0.9fr 4fr 0.6fr;
-  grid-template-rows: 10vh 100%;
+  grid-template-rows: 10vh 100% 10px;
 }
 
 #sidebar-container {
@@ -104,22 +104,19 @@ body {
   justify-self: center;
   display: grid;
   grid-template-columns: 46% 8% 46%;
-  /* margin-left: 12vw;
-  margin-right: 12vw; */
   text-align: center;
 }
 
 .three-circles {
-  height: 5vh;
+  height: 7vh;
   align-self: center;
   grid-column: 2;
   opacity: 0.7;
   justify-self: center;
+  margin-top: 1vh;
 }
 .footer-icon {
-  padding: 1px;
-  height: 15px;
-  margin: 2px;
+  height: 3vh;
   justify-self: center;
   align-self: center;
 }
@@ -145,20 +142,14 @@ body {
   text-align: center;
 }
 
-#left-side a {
-  height: 25%;
-}
-#right-side a {
-  height: 25%;
-}
 #left-side {
   grid-column: 1;
   font-size: 2vh;
-  height: 20px;
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
+  align-content: center;
   height: 100%;
 }
 
@@ -187,7 +178,7 @@ body {
   display: grid;
   grid-template-columns: 1vw 1fr 1fr 1vw;
   grid-template-rows: 1vw auto auto;
-  grid-gap: 4vh;
+  grid-gap: 10vh;
 }
 
 #ad-magic {
@@ -225,8 +216,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #d7d8e998;
-  box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.15);
+  background-color: #b4b4ce98;
+  box-shadow: 20px 30px 60px 0.5px rgba(36, 35, 35, 0.20);
 }
 
 .project:hover {
@@ -336,7 +327,8 @@ body {
     height: 5vh;
     width: auto;
     opacity: 0.85;
-    margin-top: 12vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     justify-self: center;
   }
   #about-me {
@@ -363,26 +355,18 @@ body {
     align-self: center;
     padding: 4vh;
   }
-  #about-github-icon {
-    height: 5vh;
-    width: auto;
-    opacity: 0.85;
-    margin-top: 5vh;
-    justify-self: center;
-  }
+
   #contact-info {
     padding-top: 0vh;
     padding-bottom: 0vh;
     justify-self: center;
     display: grid;
     grid-template-columns: 46% 8% 46%;
-    text-align: center;
   }
   #left-side {
     grid-column: 1;
     font-size: 1.5vh;
     height: 20px;
-    grid-row: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,8 +384,19 @@ body {
     height: 100%;
   }
 
+  .three-circles {
+    height: 5vh;
+    align-self: center;
+    grid-column: 2;
+    opacity: 0.7;
+    justify-self: center;
+    margin-top: 2vh;
+  }
   .footer-icon {
-    margin-bottom: 5vh; 
+    height: 2.5vh;
+    justify-self: center;
+    align-self: center;
+    text-align:center;
   }
 
   .project {

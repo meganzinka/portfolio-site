@@ -45,14 +45,14 @@ const About = () => {
             <a href="mailto:meganzinka@gmail.com" target="blank">
               <img className="footer-icon" src={email} />
             </a>
-            <div>meganzinka@gmail.com</div>
+            meganzinka@gmail.com
           </div>
 
           <div id="right-side">
             <a href="https://linkedin.com/in/meganzinka" target="blank">
               <img className="footer-icon" src={linkedin} />
             </a>
-            <div>linkedin.com/in/meganzinka</div>
+            linkedin.com/in/meganzinka
           </div>
         </div>
       </div>
