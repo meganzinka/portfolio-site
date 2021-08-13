@@ -13,14 +13,14 @@ body {
 
 #app-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
 #app-container {
   display: grid;
   grid-template-columns: 0.6fr 0.9fr 4fr 0.6fr;
-  grid-template-rows: 10vh 100% 10px;
+  grid-template-rows: 10vh 85vh 5vh;
 }
 
 #sidebar-container {
@@ -171,6 +171,13 @@ body {
 #resume-container-mobile {
   width: 100%;
   display: none;
+}
+
+embed { 
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  zoom: 100%; 
 }
 /*---------Projects ----------*/
 

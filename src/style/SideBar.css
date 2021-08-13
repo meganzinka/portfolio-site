@@ -3,6 +3,7 @@
   grid-template-rows: 150px 150px 150px 150px;
   border-top-left-radius: 10px;
   border-collapse: separate;
+  grid-gap: 0.1em; 
   z-index: 2000;
 }
 
@@ -22,10 +23,10 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-image: url("./../images/Small_Yellow.png");
+  background-image: url("./../images/other_yellow.png");
   background-size: 100% 100%;
   opacity: 0.9;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 0.95em;
   text-transform: uppercase;
   display: flex;
@@ -34,7 +35,7 @@
 }
 
 .sidebar-item-container:hover {
-  background-image: url("./../images/Small_Yellow.png");
+  background-image: url("./../images/other_yellow.png");
   opacity: 0.7;
   font-size: 1em;
   text-align: center;
@@ -44,8 +45,8 @@
 }
 
 .sidebar-icon {
-  width: 27px;
-  height: 33.5px;
+  width: auto;
+  height: 6vh;
   padding-top: 10px;
   opacity: 0.9;
   z-index: 2002;
@@ -81,7 +82,6 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-image: url("./../images/Small_Yellow.png");
     background-size: 100% 100%;
     opacity: 0.9;
     font-weight: 200;
