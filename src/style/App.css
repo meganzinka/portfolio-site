@@ -223,7 +223,6 @@ embed {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #b4b4ce98;
   box-shadow: 20px 30px 60px 0.5px rgba(36, 35, 35, 0.20);
 }
 
@@ -232,6 +231,7 @@ embed {
 }
 .project-description {
   padding: 1.1vw;
+
 }
 .gif {
   width: 100%;
@@ -414,7 +414,6 @@ embed {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #d7d8e998;
     box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.15);
   }
 
