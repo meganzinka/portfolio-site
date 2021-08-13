@@ -31,15 +31,15 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div id="comp-wrapper-mobile">
-        <img src={computer} />
-        <div className="wrapper">
-          <div id="typing-demo">Megan Zinka</div>
+      <div id="comp-wrapper-mobile" onClick={enterSite}>
+        <img src={computer} onClick={enterSite}/>
+        <div className="wrapper" onClick={enterSite}>
+          <div id="typing-demo" onClick={enterSite}>Megan Zinka</div>
         </div>
-        <div className="wrapper">
-          <div id="dev-title">Full Stack Developer</div>
+        <div className="wrapper" onClick={enterSite}>
+          <div id="dev-title" onClick={enterSite}>Full Stack Developer</div>
         </div>
-        <div className="wrapper">
+        <div className="wrapper" onClick={enterSite}>
           <div id="tech">Javascript | React | CSS | Mongo DB | Web API </div>
         </div>
       </div>
