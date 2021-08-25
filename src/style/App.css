@@ -231,7 +231,6 @@ embed {
 }
 .project-description {
   padding: 1.1vw;
-
 }
 .gif {
   width: 100%;
@@ -415,6 +414,11 @@ embed {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.15);
+  }
+
+  #project-title { 
+    text-align: center;
+    font-weight: bold; 
   }
 
   #github-icon {

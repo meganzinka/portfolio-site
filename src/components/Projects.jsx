@@ -19,8 +19,9 @@ const Projects = () => {
             <img className="gif" src={AdMagicGif} />
           </a>
           <div className="project-description">
-            Dashboard created from scratch which hosts many ways to filter
-            sales. All tools are responsive to database updates and user input.
+            <b>AdMagic Sales Dashboard: </b>
+          Created from scratch and hosts many ways to filter
+            sales data. All tools are responsive to database updates and user input.
             My principal role in the project was to create the filtering tool
             from back to front end, set up database queries, and create
             hand-rolled styling.
@@ -41,6 +42,7 @@ const Projects = () => {
             <img className="gif" src={TILGif} />
           </a>
           <div className="project-description">
+          <b>Today I Learned Blog: </b>
             Web-server and front-end application built to mimic the "Today I
             Learned" SubReddit. Features include adding a new entry, searching
             by tag, editing and deleting entries, and reference various pieces
@@ -65,6 +67,7 @@ const Projects = () => {
             <img className="gif" src={GeoVermonterGif} />
           </a>
           <div className="project-description">
+          <b>Geo-Vermonter: </b>
             Web-server and front-end game application developed to drop the
             player at a random location within Vermont and require the player to
             guess which county they are in using minimal moves. The user can
@@ -89,10 +92,11 @@ const Projects = () => {
             <img className="gif" src={YelpGif} />
           </a>
           <div className="project-description">
+          <b>Yelpington: </b> 
             Yelp-like app created to enable users to view and learn about
-            restaurants in Provincetown. Features include zooming into a
+            restaurants in Provincetown, MA. Features include zooming into a
             restaurant's location upon choosing a restaurant, viewing core info
-            about the business, and leaving and viewing comments.
+            about the business, and leaving and viewing comments. All features are hand-styled.
             <br />
             <br />
             React | Javascript | CSS | HTML | React Leaflet | ExpressJS | NodeJS

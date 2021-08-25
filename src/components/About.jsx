@@ -16,20 +16,24 @@ const About = () => {
         <div id="about-me">
           <h3>ABOUT ME</h3>
           After six years as an Advanced Algebra and AP Statistics teacher in
-          urban education, I am excited to transition into software engineering!
-          After self-directed learning for months, I recently completed an
-          intensive software development bootcamp program where I could fully
-          immerse myself in the field. I found my background in mathematics and
-          statistics not only to be incredibly useful in problem solving, I
-          revelled in the opportunity to think critically, logically, and
-          mathematically in new ways. As a teacher, I constantly thought about
-          how to make math content accessbile - minimizing clicks and steps to
-          getting to the core of the lesson - and I have found the design
-          instincts I developed in my teaching career to be tremendously useful
-          as I think about user experience and interface in software
-          development. The more I learn, the more I find new interests and
-          passions, like sleek design and building intuitive and efficient
-          systems. I am excited to continue grow in the field!
+          urban education, I am excited to transition web development! After
+          self-directed learning for months, this year I completed an intensive
+          software development bootcamp program. I found my background in
+          mathematics and statistics not only to be incredibly useful in problem
+          solving, I revelled in the opportunity to think critically, logically,
+          and mathematically in new and exciting ways. As a teacher, I
+          constantly thought about how to make math content accessbile -
+          minimizing clicks and steps to getting to the core of the lesson - and
+          I have found the design instincts I developed in my teaching career to
+          be tremendously useful as I think about user experience and interface
+          in web development. The more I learn, the more I find new interests
+          and passions, like sleek design and building intuitive and efficient
+          systems.
+          <br></br>
+          <br></br>
+
+          Since completing the bootcamp, I spent a month in Brazil on a film
+          crew as a gaffer (the person who does lighting). The documentary features women who have transformed their lives, families and communities through entrepeneurship, and being a part of the crew was one of the most incredible experiences of my life. Now that I'm back, I'm excited to enter the tech field and continue on my growth path!
         </div>
 
         <a target="_blank" href="https://github.com/meganzinka">
@@ -37,9 +41,7 @@ const About = () => {
         </a>
 
         <div id="contact-info">
-          <img 
-          className="three-circles" 
-          src={threeCircles} />
+          <img className="three-circles" src={threeCircles} />
 
           <div id="left-side">
             <a href="mailto:meganzinka@gmail.com" target="blank">
