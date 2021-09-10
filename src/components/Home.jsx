@@ -48,9 +48,9 @@ const Home = (props) => {
     } else if (event.target.id ==="up" && props.page !== 1) {
       currentPage--
       props.setPage(currentPage)
-    } else if (event.target.id === "section-three") {
+    } else if (event.target.id === "three") {
       props.setPage(3)
-    } else if (event.target.id === "section-two") {
+    } else if (event.target.id === "two") {
       props.setPage(2)
     }
   }
@@ -98,7 +98,7 @@ const Home = (props) => {
             </div>
           </div>
             <div
-            id = "section-three"
+            id = "three"
               className={tile}
               onClick = {changePage}
             >
@@ -108,7 +108,7 @@ const Home = (props) => {
               </div>
             </div>
             <div
-              id = "section-two"
+              id = "two"
               className={tile}
               onClick = {changePage}
             >

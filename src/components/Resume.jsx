@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div>
       <div id ="resume-container">
-			<iframe title="resume" src= "./MeganZinkaResume.pdf" zoom = "70%" type="application/pdf" width="100%" height="800px"/>
+			<iframe title="resume" src= "./MeganZinkaResume.pdf" zoom = "70%" type="application/pdf" width="100%" height="100%"/>
 		</div>
 
 
