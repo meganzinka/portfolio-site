@@ -2,6 +2,7 @@ import "./style/App.css";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import useIntersection from "./components/useIntersection"
 import {useRef, useState, useEffect} from "react"
 
 
@@ -11,23 +12,27 @@ function App() {
   const refOne = useRef(null)
   const refTwo = useRef(null)
   const refThree = useRef(null)
-  const [ref, setRef] = useState("section-one")
+  const [ref, setRef] = useState(refOne)
+  const reference = useRef(ref)
 
+  console.log(reference.current)
   const scrollToPage = () => {
     // myRef.current.scrollIntoView()
   }
 
-  console.log(refTwo.current)
-  console.log(refThree.current)
+  console.log(useIntersection(reference, '0px'))
 
   useEffect(() => {
 
     if (page === 1) {
       refOne.current.scrollIntoView()
+      setRef(refOne)
     } else if (page === 2) {
       refTwo.current.scrollIntoView()
+      setRef(refTwo)
     } else if (page ===3) {
-      refThree.current.scrollIntoView() 
+      refThree.current.scrollIntoView()
+      setRef(refThree)
     }
   }, [page])
 
