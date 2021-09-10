@@ -4,165 +4,24 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e4e5ec;
   color: #27647c;
   height: 100vh;
   width: 100%;
   overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+html {
+ scroll-snap-type: y mandatory;
+}
+.snap-child {
+  scroll-snap-align: start;
 }
 
 #app-wrapper {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+display: grid; 
+grid-template-rows: 100vh 100vh 100vh; 
 }
 
-#app-container {
-  display: grid;
-  grid-template-columns: 0.6fr 0.9fr 4fr 0.6fr;
-  grid-template-rows: 10vh auto;
-}
-
-#sidebar-container {
-  grid-column: 2;
-  grid-row: 2;
-  z-index: 1500;
-}
-
-#main-container {
-  grid-column: 3;
-  grid-row: 2;
-  background-color: #f9f9fb;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 20px 30px 60px 0.5px rgb(0, 0, 0, 0.1);
-}
-
-/* ----- Header Logo ----- */
-#logo-container {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-content: center;
-  height: 30vh;
-}
-
-.logo {
-  height: 20vh;
-  justify-self: flex-end;
-  align-self: center;
-  padding: 4vh;
-}
-
-/*--------About Page--------*/
-.main {
-  grid-column: 1;
-  text-align: center;
-  margin: 0;
-  margin-left: 4vw;
-  margin-right: 4vw;
-  display: inline-block;
-}
-
-.main h3 {
-  font-weight: 500;
-  text-align: center;
-}
-
-/*paragraph description*/
-#about-me {
-  text-align: justify;
-  padding: 5vh;
-  font-weight: 300;
-  font-size: 1.1vw;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #d7d8e998;
-  box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.1);
-}
-
-.title h3 {
-  padding-bottom: 3vh;
-}
-
-/* ----- Footer Contact Info ----- */
-#contact-info {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 46% 8% 46%;
-  text-align: center;
-}
-
-#contact-info-projects {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 46% 8% 46%;
-  text-align: center;
-}
-
-.three-circles {
-  height: 7vh;
-  align-self: center;
-  grid-column: 2;
-  opacity: 0.7;
-  justify-self: center;
-  margin-top: 1vh;
-}
-.footer-icon {
-  height: 3vh;
-  justify-self: center;
-  align-self: center;
-}
-
-#about-github-icon {
-  height: 5vh;
-  width: auto;
-  opacity: 0.85;
-  margin-top: 12vh;
-  justify-self: center;
-}
-
-#github-icon {
-  width: 90px;
-  height: 60px;
-  opacity: 0.85;
-  margin-top: 1vh;
-  justify-self: center;
-}
-
-#github-icon-container {
-  width: 100%;
-  text-align: center;
-}
-
-#left-side {
-  grid-column: 1;
-  font-size: 2vh;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-content: center;
-  height: 100%;
-}
-
-#right-side {
-  grid-column: 3;
-  grid-row: 1;
-  font-size: 2vh;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
 
 /*------ Resume -------*/
 #resume-container {
@@ -180,12 +39,26 @@ embed {
   zoom: 100%; 
 }
 /*---------Projects ----------*/
-
+#projects {
+  grid-row: 2; 
+}
 #projects-container {
-  display: grid;
-  grid-template-columns: 1vw 1fr 1fr 1vw;
-  grid-template-rows: 1vw auto auto;
-  grid-gap: 10vh;
+  display: grid; 
+  grid-template-columns: 9vw 35vw 35vw 9vw;
+  grid-template-rows: auto auto;
+  grid-gap: 4vh 4vw;
+}
+.project {
+  height: 42vh;  
+  text-align: justify;
+  font-size: 0.9vw;
+  overflow: scroll;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 20px 30px 45px 0.5px rgba(36, 35, 35, 0.30);
+  overflow:scroll; 
 }
 
 #ad-magic {
@@ -209,33 +82,50 @@ embed {
 }
 
 #github-icon {
+  justify-self: center; 
   height: 5vh;
   width: auto;
   opacity: 0.85;
   margin-top: 1vh;
 }
+#github-icon-container {
+  display: flex; 
+  justify-content: center;
+    }
 
-.project {
-  text-align: justify;
-  font-size: 0.9vw;
-  overflow: scroll;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 20px 30px 60px 0.5px rgba(36, 35, 35, 0.20);
+#languages {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    #fffab6 50%
+    );
+  background-position: -0% 0;
+  background-size: 200% 50%;
+  line-height: 1.2vw;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+a {
+  text-decoration: none;
+  color: #27647c;
+}
+
+#languages:hover {
+  background-position: -99.99% 0%;
 }
 
 .project:hover {
-  width: 105%;
+  width: 105%; 
 }
 .project-description {
   padding: 1.1vw;
 }
 .gif {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 5px; 
 }
 
 .gif:hover {
@@ -329,81 +219,8 @@ embed {
     grid-row: 5;
     margin-bottom: 5vh; 
   }
-  #about-github-icon {
-    height: 5vh;
-    width: auto;
-    opacity: 0.85;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    justify-self: center;
-  }
-  #about-me {
-    grid-column: 1;
-    text-align: justify;
-    margin-top: 5vh;
-    padding: 5vh;
-    font-weight: 300;
-    font-size: 2.5vw;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #d7d8e998;
-    box-shadow: 50px 30px 60px 0.5px rgba(123, 120, 120, 0.1);
-  }
-  #logo-container {
-    display: none;
-  }
+  
 
-  .logo {
-    height: 20vh;
-    justify-self: flex-end;
-    align-self: center;
-    padding: 4vh;
-  }
-
-  #contact-info {
-    padding-top: 0vh;
-    padding-bottom: 0vh;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 46% 8% 46%;
-  }
-  #left-side {
-    grid-column: 1;
-    font-size: 1.5vh;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
-  #right-side {
-    grid-column: 3;
-    grid-row: 1;
-    font-size: 1.5vh;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .three-circles {
-    height: 5vh;
-    align-self: center;
-    grid-column: 2;
-    opacity: 0.7;
-    justify-self: center;
-    margin-top: 2vh;
-  }
-  .footer-icon {
-    height: 2.5vh;
-    justify-self: center;
-    align-self: center;
-    text-align:center;
-  }
 
   .project {
     text-align: justify;
@@ -426,7 +243,9 @@ embed {
     width: auto;
     opacity: 0.85;
     margin-top: 1vh;
+    align-self: center; 
   }
+
 
   .project:hover {
     width: 105%;
