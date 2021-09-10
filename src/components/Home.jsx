@@ -1,7 +1,6 @@
 import React from "react";
 import lightComputer from "./../images/computer2ON.png";
 import darkComputer from "./../images/darkComp.png";
-import gitHub from "./../images/github.png"
 import "./../style/Home.css";
 import { useState, useEffect } from "react";
 
@@ -13,9 +12,7 @@ const Home = (props) => {
   const [checked, setChecked] = useState("true");
   const [computer, setComputer] = useState(lightComputer);
   const [menu, setMenu] = useState(false);
-  const [button, setButton] = useState("button");
-  const [page, setPage] = useState(1);
-  const [link, setLink] = useState();
+  const [menuItem, setMenuItem] = useState("button");
 
   function changeChecked(event) {
     if (event.target.checked) {
@@ -37,61 +34,56 @@ const Home = (props) => {
     setMenu(!menu);
   }
 
-  function changePage(event) {
-    if (event.target.value === "down" && page !== 3) {
-      setPage((page += 1));
-    } else if (event.target.value === "up" && page !== 1) {
-      setPage((page -= 1));
-    }
-    console.log(page);
-  }
-
   useEffect(() => {
     if (menu) {
-      setButton("button");
-    } else setButton("hide-menu");
+      setMenuItem("menu-item");
+    } else setMenuItem("hide-menu");
   }, [menu]);
 
-  useEffect(() => {
-    if (page === 1) {
-      setLink("#section-one");
-    } else if (page === 2) {
-      setLink("#section-two");
-    } else if (page === 3) {
-      setLink("#section-three");
+  function changePage(event) {
+    let currentPage = props.page 
+    if (event.target.id==="down" && props.page !== 3) {
+      currentPage++
+      props.setPage(currentPage)
+    } else if (event.target.id ==="up" && props.page !== 1) {
+      currentPage--
+      props.setPage(currentPage)
+    } else if (event.target.id === "section-three") {
+      props.setPage(3)
+    } else if (event.target.id === "section-two") {
+      props.setPage(2)
     }
-  }, [page]);
-
+  }
+    
   return (
     <div>
-      {/* <div className="menu" onClick={toggleMenu}></div> */}
-      {/* <div id="button-container">
-        <a href="mailto:meganzinka@gmail.com" target="blank" rel="noreferrer" >
-          <div className={button}><img src= "./../images/email.png"></img></div>
+      <div className="menu" onClick={toggleMenu}></div>
+      <div id="button-container">
+        <a href="mailto:meganzinka@gmail.com" target="blank" rel="noreferrer">
+          <div className={menuItem} id="email-menu-item"></div>
         </a>
 
-        <a href="https://linkedin.com/in/meganzinka" rel="noreferrer" target="blank">
-          <div className={button}></div>
+        <a
+          href="https://linkedin.com/in/meganzinka"
+          rel="noreferrer"
+          target="blank"
+        >
+          <div className={menuItem} id="linked-in-button"></div>
         </a>
 
         <a href="https://github.com/meganzinka" target="blank" rel="noreferrer">
-          <div className={button}><img className = "fill" src={"./../images/github.png"}/></div>
+          <div className={menuItem} id="github-button"></div>
         </a>
-
-        <a href={link}>
-          <div id="up" className={button} onClick={changePage}></div>
-        </a>
-        <a href={link}>
-          <div id="down" className={button} onClick={changePage}></div>
-        </a>
-      </div> */}
+          <div id="up" className={menuItem} onClick={changePage}></div>
+          <div id="down" className={menuItem} onClick={changePage}></div>
+      </div>
       <div id="home-page">
         <div id={leftWrapper}>
-          <img src={computer} />
+          <img src={computer} alt="computer" />
 
           <div id="switch-wrapper">
             <input
-              class="l"
+              className="l"
               type="checkbox"
               defaultChecked={checked}
               onChange={changeChecked}
@@ -105,32 +97,26 @@ const Home = (props) => {
               coding!
             </div>
           </div>
-          <a href="#section-three">
             <div
+            id = "section-three"
               className={tile}
-              onClick={() => {
-                setPage(3);
-              }}
+              onClick = {changePage}
             >
               <div className={text}>
                 I'm full-stack web developer with a background in mathematics
                 and statistics.
               </div>
             </div>
-          </a>
-          <a href="#section-two">
             <div
+              id = "section-two"
               className={tile}
-              onClick={() => {
-                setPage(2);
-              }}
+              onClick = {changePage}
             >
               <div className={text}>
                 I'm a sucker for intuitive functionality & sleek design. Scroll
                 down to learn more!
               </div>
             </div>
-          </a>
         </div>
       </div>
     </div>

@@ -174,9 +174,7 @@ input {
   right: 1vw;
   /* z-index: 100; */
 }
-switch-wrapper {
 
-}
 .l {
 	background-color: rgba(0,0,0,0.7);
 	border-radius: 0.75em;
@@ -239,8 +237,6 @@ switch-wrapper {
 .l:focus {
 	outline: 0;
 }
-
-
 /*hamburger menu*/
 .menu {
   position: absolute;
@@ -253,26 +249,16 @@ switch-wrapper {
   background: #e8e8f3;
   border-radius: 50%;
   cursor: pointer;
-  /* box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0); */
-}
-
-.button {
-  width: 2vw;
-  height: 2vw;
-  padding: 2vw;  
-  z-index: 30; 
-  border-radius: 50%;
-  cursor: pointer;
-  background: #e8e8f3;
-  /* position: absolute; */
-  /* opacity: 0; */
-  pointer-events: none;
-  box-shadow: inherit;
-  transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(.08,.82,.17,1) transform;
-
+  background-image: url("./../images/menuIcon.svg"); 
+  background-repeat: no-repeat; 
+  background-size: 50%; 
+  background-position: center; 
+  /* box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7
+  x 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0); */
 }
 
 #button-container {
+  width: 4vw; 
   z-index: 30; 
   display: flex; 
   flex-direction:column; 
@@ -283,13 +269,50 @@ switch-wrapper {
   height: 25vw;
 }
 
+.menu-item {
+ width: 4vw;  
+  height: 4vw; 
+padding: 0.5vw; 
+  border-radius: 50%; 
+  background-color: #e8e8f3;
+}
+
+#github-button {
+  content: url("./../images/gitHub.svg");
+}
+
+#email-menu-item {
+  background-image: url("./../images/email.svg");
+  background-size: 60%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+#linked-in-button { 
+  background-image: url("./../images/linkedIn.svg");
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+#up {
+  background-image: url("./../images/up.svg");
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+#down{
+  background-image: url("./../images/down.svg");
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
 .hide-menu {
   display: none; 
 }
 
-.fill {
-  width: 2vw;
-}
 
 @media only screen and (max-width: 600px) {
 }
