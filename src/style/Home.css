@@ -315,4 +315,68 @@ padding: 0.5vw;
 
 
 @media only screen and (max-width: 600px) {
+
+  #home-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    position: relative; 
+  }
+  
+  #comp-wrapper {
+    width: 100%;
+    height: 50vh;
+    background: #00a99d;
+  }
+  
+  #about-me-wrapper {
+    width: 100%; 
+    height: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dce3eb;
+  }
+  
+  #home-page img {
+    height: minmax(90vh, 100vh);
+    width: 100%;
+  }
+  
+  .about-me-tile {
+    text-align: left;
+    padding: 3vh;
+    margin: 3vh;
+    font-weight: 300;
+    font-size: 3vw;
+    font-family: fonescaReg;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #eef2f5;
+    box-shadow: 20px 20px #00a99d;
+  }
+  
+  .about-me-tile:active {
+    transform: translate(20px, 20px);
+    box-shadow: 0px 0px #00a99d;
+  }
+  
+  .about-me-text {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 50%,
+     #fffab6 50%
+    );
+    background-position: -0% 0;
+    background-size: 200% 50%;
+    line-height: 3vw;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+    vertical-align: middle;
+    display: table-cell;
+  }
 }
