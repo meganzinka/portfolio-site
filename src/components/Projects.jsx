@@ -72,7 +72,7 @@ const Projects = () => {
             <a
             rel="noreferrer"
               target="_blank"
-              href="https://github.com/meganzinka/today-I-learned"
+              href="https://github.com/meganzinka/geo-vermonter-Megan"
             >
               <div id="github-icon-container">
                 <img src={gitHub} id="github-icon" alt="github icon" />
