@@ -42,41 +42,83 @@ grid-template-rows: 100vh 100vh 100vh;
 }
 #projects-container {
   display: grid; 
-  grid-template-columns: 9vw 35vw 35vw 9vw;
-  grid-template-rows: auto auto;
-  grid-gap: 4vh 4vw;
+  grid-template-columns: 42vw 42vw;
+  grid-template-rows: 21vw 21vw;
+  grid-gap: 5vh 8vw;
+  margin-top: calc((95vh - 42vw)/2);
+  margin-left: 4vw; 
+  margin-right: 4vw; 
 }
 .project {
-  height: 42vh;  
-  text-align: justify;
+  height: auto;  
   font-size: 0.9vw;
-  overflow: scroll;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content:center;
   box-shadow: 20px 30px 45px 0.5px rgba(36, 35, 35, 0.30);
-  overflow:scroll; 
+  overflow:hidden;
+  position: relative; 
+  align-content: center;
+}
+
+.project-description {
+  color: white;
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; 
+  padding: 1.1vw;
+  text-decoration: none; 
+}
+
+
+.gif {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  cursor: "click me!"
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:rgb(1,168,158);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
 }
 
 #ad-magic {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 #til {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 #geo-vt {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 #yelp {
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 #github-icon {
@@ -85,51 +127,60 @@ grid-template-rows: 100vh 100vh 100vh;
   width: auto;
   opacity: 0.85;
   margin-top: 1vh;
+  background-color:white;
+  border-radius: 50%;
+  padding: 2vw; 
 }
+
 #github-icon-container {
   display: flex; 
   justify-content: center;
-    }
+  width: 4vw;
+  height: 4vw;
+  padding: 0.5vw;
+  border-radius: 50%;
+  background-color: #e8e8f3;
+  content: url("./../images/gitHub.svg");
+  justify-self: center; 
+  align-self: center; 
+  margin-top: 2vh; 
+}
+
+#github-icon-container:hover {
+  width: 5vw;
+  height: 5vw;
+}
 
 #languages {
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 50%,
-    #fffab6 50%
+    rgb(236, 241, 187) 50%
     );
   background-position: -0% 0;
   background-size: 200% 50%;
   line-height: 1.2vw;
-  text-decoration: none;
   transition: background-position 0.5s ease-out;
   vertical-align: middle;
-  display: table-cell;
+  font-size: 1.3vw; 
 }
 
-a {
+.project-title {
   text-decoration: none;
-  color: #27647c;
+  color: white;
+}
+.project-title:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1vw;
 }
 
 #languages:hover {
   background-position: -99.99% 0%;
+  color: #27647c;
+
 }
 
-.project:hover {
-  width: 105%; 
-}
-.project-description {
-  padding: 1.1vw;
-}
-.gif {
-  width: 100%;
-  border-top-right-radius: 5px; 
-  border-top-left-radius: 5px; 
-}
-
-.gif:hover {
-  filter: brightness(105%);
-}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -163,21 +214,12 @@ a {
     scroll-snap-align: none; 
   }
 
-
-
-
-
-
-
-
-
-
-
   #projects-container {
     display: grid;
     grid-template-columns: 1vw 1fr 1vw;
     grid-template-rows: 1vw auto auto auto auto 1vw;
     grid-gap: 4vh;
+    margin-top: 5vh;
   }
 
   #ad-magic {
@@ -216,12 +258,12 @@ a {
   .project {
     text-align: justify;
     font-size: 2.3vw;
-    /* overflow: scroll; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     box-shadow: 20px 30px 60px 0.5px rgba(123, 120, 120, 0.15);
+    height: fit-content;
   }
 
   #project-title { 
@@ -235,8 +277,25 @@ a {
     opacity: 0.85;
     margin-top: 1vh;
     align-self: center; 
+    filter: invert(48%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
   }
 
+  .project:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .overlay {
+    position:none;
+    bottom: 0;
+    height:25%; 
+    left: 0;
+    right: 0;
+    background-color:rgb(1,168,158);
+    overflow: hidden;
+    width: 100%;
+    transition: .5s ease;
+  }
+  
 
   .project:hover {
     width: 100%;

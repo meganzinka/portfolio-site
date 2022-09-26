@@ -93,8 +93,7 @@ const Home = (props) => {
         <div id={rightWrapper}>
           <div className={tile}>
             <div className={text}>
-              Hi! I'm Megan. I love reading, meditating, my two sweet dogs &
-              coding!
+              Hi! I'm Megan. My background is in mathematics, statistics, education, and web development. 
             </div>
           </div>
             <div
@@ -103,8 +102,7 @@ const Home = (props) => {
               onClick = {changePage}
             >
               <div className={text}>
-                I'm full-stack web developer with a background in mathematics
-                and statistics.
+                In the past year or so, I've gained more experience in analytics, data artchitecture, and a client's launch of a new customer data platform. 
               </div>
             </div>
             <div
@@ -113,8 +111,7 @@ const Home = (props) => {
               onClick = {changePage}
             >
               <div className={text}>
-                I'm a sucker for intuitive functionality & sleek design. Scroll
-                down to learn more!
+                I love learning new things and facing challenges I haven't faced before. Scroll down to see more! 
               </div>
             </div>
         </div>
